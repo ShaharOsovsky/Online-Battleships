@@ -62,7 +62,7 @@ class Board():
                 if self.get_cell_value(cell) != 'H':
                     self.change_cell_value(cell, 'X')
 
-    # Creates and returns a list of all the cell's neighbors (within the board's boundaries
+    # Creates and returns a list of all the cell's neighbors (within the board's boundaries)
     def create_neighbors_list(self, row, col):
         neighbors = list()    
         for i in xrange(-1, 2):
