@@ -119,7 +119,6 @@ class Client:
         
         else:
             msg_type = Client.server_msg_type(msg)  # Analyzing massage type
-            #print "msg = " + msg				# ----------blllaaaaaaaaaaaaaaaaaaaaaa - ERASE
             if msg_type == OPPONENT_ANSWER:
                 win = self.player.update_opponent_board(msg, self.latest_move[0], self.latest_move[1])
                 self.print_board()
