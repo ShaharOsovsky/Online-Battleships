@@ -67,5 +67,7 @@ You can create your own .ship files, all you have to do is:
 * A ship can be comprised only of cells which are neighbours, diagonal cells doesn't count. for example:
 
   A1,A2,B2 is a valid ship, because all cells are neighbours.
+  
   A1,B2,B3 is NOT valid, because between A1 and B2 there is no common cell which is part of the ship.
+  
   This is necessary for a proper run of the game.
