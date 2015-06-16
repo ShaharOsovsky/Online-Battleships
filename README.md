@@ -48,3 +48,24 @@ Now the game is on.
 Type "exit" to leave the game at any given time.
 
 When it'll be finished the connections will be closed (Server will end it's run).
+
+
+
+Note:
+-------
+
+You can create your own .ship files, all you have to do is:
+
+* Each ship in the board starts in a new line.
+
+* The board is 10X10, hence indices will run from 1 to 10 on one axis, and from A to J on the other axis.
+ 
+* Each cell in the board is of course represented by a combination of a letter and a number, such as: A4, J7.
+
+* Each ship is comprised of indices seperated only by a coma (','). See example in the next line \/.
+ 
+* A ship can be comprised only of cells which are neighbours, diagonal cells doesn't count. for example:
+
+  A1,A2,B2 is a valid ship, because all cells are neighbours.
+  A1,B2,B3 is NOT valid, because between A1 and B2 there is no common cell which is part of the ship.
+  This is necessary for a proper run of the game.
